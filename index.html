@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photography Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times-circle" onclick="hideMenu()"></i>
+
+          <ul>
+             <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="course.html">Course</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contacts.html">Contact</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <div class="text-box">
+        <h1 class="heading">PHOTOGRAPHY</h1>
+        <p>
+         This website has been built only for practice purposes, to showcase my skills and efficiency and at the same time improve on them. Feedbacks are always welcomed. Check it out!
+        </p>
+
+        <a href="" class="hero-btn">Visit to know more</a>
+      </div>
+    </section>
+
+    <!-- Course -->
+
+    <section class="course">
+      <h1>Courses We Offer</h1>
+      <p>
+        An indicator on all the high quality courses our renowned institute has to offer.
+      </p>
+
+      <div class="row">
+        <div class="course-col">
+          <h3>Beginner</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis
+            accusantium velit nam, tempore temporibus consequatur quae
+            consequuntur tempora minus mollitia.
+          </p>
+        </div>
+        <div class="course-col">
+          <h3>Intermediate</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque
+            asperiores iusto optio corporis quod dicta dolores eaque earum sunaa!
+          </p>
+        </div>
+        <div class="course-col">
+          <h3>Advanced</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequuntur earum commodi placeat quibusdam, modi quaerat libero
+            maxime ipsam velit ab.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work -->
+
+    <section class="work">
+      <h1>Portfolio</h1>
+      <p>
+        Some real photos I captured during my visit to various places.
+      </p>
+
+      <div class="row">
+        <div class="work-col">
+          <img src="images/Oberhof.jpg" alt="" />
+          <div class="layer">
+            <h3>OBERHOF</h3>
+          </div>
+        </div>
+        <div class="work-col">
+          <img src="images/pexels-uğurcan-özmen-9532456.jpg" alt="" />
+          <div class="layer">
+            <h3>SOMEWHERE ON THE EARTH</h3>
+          </div>
+        </div>
+        <div class="work-col">
+          <img src="images/Luisenthal.jpg" alt="" />
+          <div class="layer">
+            <h3>LUISENTHAL</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+
+    <section class="testimonials">
+      <h1>Customer reviews</h1>
+      <p>
+        Some fake reviews which with very obvious five stars, because why not?
+      </p>
+
+      <div class="row">
+        <div class="testimonial-col">
+            <img src="images/user.png" alt="">
+            <div>
+                <p>Such a freaking awesome instructor. Taught me from the basics to the most advanced photography skills within a couple of months. Surely the best institute I have come across. Definitely recommended.
+                    <h3>Aayush Shah</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </p>
+            </div>
+        </div>
+        <div class="testimonial-col">
+            <img src="images/user.png" alt="">
+            <div>
+                I have always loved photography and as a result have enrolled in numerous courses over a period of time but wasn't much satisfied with any of them until I came across this one. Hands down the best course ever.
+                    <h3>Marvin Dsouza</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  
+                
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+
+    <section class="cta">
+        <h1>Enroll for our Courses <br> Anywhere from the World</h1>
+        <a href="" class="hero-btn">CONTACT US</a>
+    </section>
+
+    <!-- Footer -->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>We are a fake institute running a photography course all around the world. From the basics of photography to the core details, we are there. We provide best instructors with excellent knowledge along with  decades of experience. </p>
+        <br>
+        <div class="icons">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-linkedin"></i>
+            
+        </div>
+        <p>Made by Aayush Shah @copyright</p>
+        
+    </section>
+
+    <!-- ---JavaScript for toggle menu--- -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
+
+
+
+
+
+
